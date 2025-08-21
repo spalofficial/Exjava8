@@ -9,11 +9,11 @@ public class Example_CustomFuncInterface {
 		
 		
 		// by using lambda & Internal Functional Interface Function -- static method referencing
-		  cust_fuc<Integer,Integer,Integer,Double> f1 = x_cusfun::mult;
+		  cust_fuc<Integer,Double> f1 = x_cusfun::mult;
 		  System.out.println(f1.calc(12,14,3.6));
 		  
 		// by using lambda & Internal Functional Interface Function -- non-static method referencing
-		  cust_fuc<Integer,Integer,Integer,Double> f2 = x::mult_non_static;
+		  cust_fuc<Integer,Double> f2 = x::mult_non_static;
 		  System.out.println(f2.calc(12,14,3.6));
 		  
 		  //for static we don't need a class object. direct call or reference method by class name.
@@ -33,11 +33,9 @@ class x_cusfun{
 }
 
 @FunctionalInterface
-interface cust_fuc<T,U,V,R>{
-	//T is type of 1st argument
-	//U is type of 2st argument
-	//U is type of 3RD argument
+interface cust_fuc<T,R>{
+	//T is type of input argument
 	//R is type of RETURN
-	 Double calc(Integer a, Integer b, Double c);
+	 Double calc(T a, T b, R c);
 }
 
