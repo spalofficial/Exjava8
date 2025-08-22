@@ -23,8 +23,8 @@ public class ExMinMax {
 		
 		
 		// min max can work oppositely if we change the sequence of operation
-		System.out.println(l.stream().max((x,y)->y.compareTo(x)).get()); // we are telling max but actually getting min.
-
+		System.out.println(l.stream().max((x,y)->y.compareTo(x)).get()); // we are getting max in descending order.
+		System.out.println(l.stream().min((x,y)->y.compareTo(x)).get()); // we are getting min in descending order.
 	}
 
 }
