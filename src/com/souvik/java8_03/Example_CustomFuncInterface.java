@@ -1,4 +1,4 @@
-package com.souvik.java8_01;
+package com.souvik.java8_03;
 public class Example_CustomFuncInterface {
 	
 	public static void main(String[] args) {
