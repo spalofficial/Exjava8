@@ -24,7 +24,7 @@ public class ExSequentialandParallelStream {
 		l.parallelStream().forEach(x-> System.out.println(Thread.currentThread().getName()+"--->"+x));
 		//or
 		l.stream().parallel().forEach(x-> System.out.println(Thread.currentThread().getName()+"--->"+x));
-
+		System.out.println("Nirupama");
 	}
 
 }
