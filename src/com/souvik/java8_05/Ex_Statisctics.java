@@ -70,6 +70,7 @@ class Empl{
  public Empl() {
 	super();
 	// TODO Auto-generated constructor stub
+	
  }
 
 }
